@@ -41,7 +41,7 @@ class Profile extends Component {
       if(content) {
         const tasks = JSON.parse(content);
         this.setState({tasks});
-      } 
+      }
     })
   }
 
@@ -84,7 +84,7 @@ class Profile extends Component {
       <NavBar username={username} user={person} signOut={this.props.handleSignOut}/>
         <div className="row justify-content-center"id="header">
           <h3 className="user-info">
-            {username}'s to-dos
+            
           </h3>
         </div>
         <br></br>
@@ -121,7 +121,7 @@ class Profile extends Component {
                     <span className="input-group-text">
                       <div className="task">
                         {task[1]? <s>{task[0]}</s> : task[0]}
-                      </div> 
+                      </div>
                       <div className="delete">
                         <button className="btn btn-primary" data-index={i} onClick={this.removeTask}>
                           <div className="X" data-index={i}>X</div>
@@ -133,7 +133,7 @@ class Profile extends Component {
               </ul>
             )}
           </div>
-      </div> 
+      </div>
     </div>
   );
   }
