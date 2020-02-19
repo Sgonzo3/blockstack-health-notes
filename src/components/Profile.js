@@ -84,7 +84,7 @@ class Profile extends Component {
       <NavBar username={username} user={person} signOut={this.props.handleSignOut}/>
         <div className="row justify-content-center"id="header">
           <h3 className="user-info">
-            
+
           </h3>
         </div>
         <br></br>
@@ -101,7 +101,7 @@ class Profile extends Component {
                 onChange={this.handleChange}
                 value={this.state.value}
                 required
-                placeholder="To-do..."
+                placeholder="Notes..."
                 autoFocus={true}
               />
               <div className="input-group-append" id="add-task">
